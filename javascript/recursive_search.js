@@ -1,5 +1,16 @@
 function recursiveSearch(arr, target) {
-  // type your code here
+  // use if statement to see if there are element in the array
+  if (arr.length === 0) {
+    return false;
+  }
+  // use if statement to check if first element of the array is === to target
+  if (arr[0] === target) {
+    //if yes, return true
+    return true;
+  }
+
+//retrun the function by removing the element we already checked from the array
+  return recursiveSearch(arr.slice(1), target);
 }
 
 if (require.main === module) {

@@ -2,7 +2,7 @@ function recursiveSearch(arr, target) {
   if (arr.length === 0) {
     return false;
   }
-
+  
   if (arr[0] === target) {
     return true;
   }
@@ -20,15 +20,15 @@ if (require.main === module) {
   console.log("Expecting: false");
   console.log(recursiveSearch([3, 2, 1], 4));
 
-  console.log("");
+  // console.log("");
 
-  console.log("Expecting: false");
-  console.log(recursiveSearch([], 7));
+  // console.log("Expecting: false");
+  // console.log(recursiveSearch([], 7));
 
-  console.log("");
+  // console.log("");
 
-  console.log("Expecting: true");
-  console.log(recursiveSearch([7], 7));
+  // console.log("Expecting: true");
+  // console.log(recursiveSearch([7], 7));
 }
 
 module.exports = recursiveSearch;
